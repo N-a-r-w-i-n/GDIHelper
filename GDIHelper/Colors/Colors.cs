@@ -52,7 +52,7 @@ namespace GDIHelper.Colors
         /// <returns>The RGBA string of the given color.</returns>
         public static string ToRGBAString(this Color color)
         {
-            return $"rgb({color.R}, {color.G}, {color.B}, {color.A})";
+            return $"rgba({color.R}, {color.G}, {color.B}, {color.A})";
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace GDIHelper.Colors
         /// <returns>The ARGB string of the given color.</returns>
         public static string ToARGBString(this Color color)
         {
-            return $"rgb({color.A}, {color.R}, {color.G}, {color.B})";
+            return $"argb({color.A}, {color.R}, {color.G}, {color.B})";
         }
 
         /// <summary>

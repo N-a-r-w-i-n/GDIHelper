@@ -7,47 +7,47 @@ A Bunch of useful GDI+ methods and extensions that can be used for many purposes
 
 <h4 align="Left">Methods</h3>
 
-* [GetFont]()
-* [GetFont]()   
-* [SetAlignment]()
-* [GlowBrush]()
-* [GlowBrush]()
+* [GetFont](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#getfont)
+* [GetFont](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#getfont-1)   
+* [SetAlignment](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#setalignment)
+* [GlowBrush](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#glowbrush)
+* [GlowBrush](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#glowbrush-1)
 
 <h4 align="Left">Extensions</h3>
 
 * _**Rectangles**_
-    * [RoundRec](https://github.com/N-a-r-w-i-n/GDIHelper/new/master?readme=1#round-rectangle#L52-L57)
+    * [RoundRec](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#roundrec)
   
 * _**Colors**_
-    * [ToHTML]()
-    * [ToBrush]()
-    * [ToPen]()
-    * [ToRGBString]()
-    * [ToRGBAString]()
-    * [ToARGBString]()
-    * [MixColors]()
+    * [ToHTML](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tohtml)
+    * [ToBrush](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tobrush)
+    * [ToPen](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#topen)
+    * [ToRGBString](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#torgbstring)
+    * [ToRGBAString](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#torgbastring)
+    * [ToARGBString](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#toargbstring)
+    * [MixColors](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#mixcolors)
     
 * _**Drawings**_
-    * [DrawImageFromBase64]()
-    * [DrawColoredImage]()
-    * [DrawColoredImage]()
-    * [DrawTransparentImage]()
-    * [DrawStrokedRectangle]()
-    * [DrawStrokedEllipse]()
-    * [DrawRoundedRectangleWithStroke]()
+    * [DrawImageFromBase64](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#drawimagefrombase64)
+    * [DrawColoredImage](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#drawcoloredimage)
+    * [DrawColoredImage](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#drawcoloredimage-1)
+    * [DrawTransparentImage](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#drawtransparentimage)
+    * [DrawStrokedRectangle](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#drawstrokedrectangle)
+    * [DrawStrokedEllipse](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#drawstrokedellipse)
+    * [DrawRoundedRectangleWithStroke](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#drawroundedrectanglewithstroke)
     
 * _**Images**_
-    * [ToBrush]()
-    * [ToBrush]()
-    * [ToPen]()
-    * [ToBase64]()
+    * [ToBrush](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tobrush-1)
+    * [ToBrush](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tobrush-2)
+    * [ToPen](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tobrush-2)
+    * [ToBase64](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tobase64)
     
 * _**Strings**_
-    * [ToImage]()
-    * [ToColor]()
-    * [ToBrush]()
-    * [ToPen]()
-    * [ToFont]()
+    * [ToImage](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#toimage)
+    * [ToColor](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tocolor)
+    * [ToBrush](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tobrush-3)
+    * [ToPen](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#topen-2)
+    * [ToFont](https://github.com/N-a-r-w-i-n/GDIHelper/blob/master/README.md#tofont)
 
 ##
 
@@ -119,7 +119,7 @@ using GDIHelper;
 GraphicsPath GP = new Rectangle(0, 0, 10, 10).RoundRec(12, true, true, true, true);
 ```
 
-<h3 align="Left">Colors</h3>
+<h2 align="Left">Colors</h2>
 
 ### ToHTML
 ```cs
@@ -147,7 +147,7 @@ string rgba = Color.Aquamarine.ToRGBAString();
 Output :
  > rgba(127, 255, 212, 255)
   
-###* ToARGBString
+### ToARGBString
 ```cs
 string argb = Color.Aquamarine.ToARGBString();
 ```
@@ -159,7 +159,7 @@ Output :
 Color color = new Color[]{Color.Black, Color.Blue}.MixColors();
 ```
 
-<h3 align="Left">Colors</h3>
+<h2 align="Left">Colors</h2>
 
 ### DrawImageFromBase64
 ```cs
@@ -207,7 +207,7 @@ Graphics g = CreateGraphics();
 g.DrawRoundedRectangleWithStroke(new Rectangle(0, 0, 12, 12), Color.Brown, Color.Black, 2, 10, true, true ,true, true);
 ```
 
-<h3 align="Left">Images</h3>
+<h2 align="Left">Images</h2>
 
 ### ToBrush
 ```cs
@@ -230,7 +230,7 @@ Pen pen = image.ToPen(2, LineCap.Custom, LineCap.Custom);
 Image image = Image.FromFile("image path");
 string base64image = image.ToBase64();
 ```
-<h3 align="Left">Strings</h3>
+<h2 align="Left">Strings</h2>
 
 ### ToImage
 ```cs

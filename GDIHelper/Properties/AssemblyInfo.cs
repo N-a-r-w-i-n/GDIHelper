@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GDI Cooperative  Extensions")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("GDI Helper")]
+[assembly: AssemblyDescription("The Bunch of useful functions and GDI extentions.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GDI Cooperative  Extensions")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyProduct("GDI Helper")]
+[assembly: AssemblyCopyright("Copyright ©  Narwin 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

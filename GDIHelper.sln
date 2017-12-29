@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDI Cooperative  Extensions", "GDI Cooperative  Extensions\GDI Cooperative  Extensions.csproj", "{229D43C2-E8C2-43F9-932B-3D662B10D1E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDIHelper", "GDIHelper\GDIHelper.csproj", "{229D43C2-E8C2-43F9-932B-3D662B10D1E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

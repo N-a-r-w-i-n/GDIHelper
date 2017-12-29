@@ -51,9 +51,9 @@ A Bunch of useful GDI+ methods and extensions that can be used for many purposes
 
 ##
 
-<h2 align="Left">Methods</h3>
+<h1 align="Left">Methods</h1>
 
-* GetFont
+### GetFont
 
 ```cs
 using GDIHelper;
@@ -61,7 +61,7 @@ using GDIHelper;
     private readonly Methods _instance = new Methods();
     Font fontfile = _instance.GetFont("fontbytearray /* e.g : a font stored in resources */, fontsize, fontstyle);
 ```
-* GetFont
+### GetFont
 
 ```cs
 
@@ -71,7 +71,7 @@ using GDIHelper;
     Font fontfile = _instance.GetFont("Font path" /* e.g : C:fontfile.ttf */, fontsize, fontstyle);
     
 ```
-* SetAlignment
+### SetAlignment
 
 ```cs
 
@@ -81,7 +81,7 @@ using GDIHelper;
     StringFormat stringFormat = _instance.SetAlignment(StringAlignment.Center, StringAlignment.Near);
     
 ```
-* GlowBrush
+### GlowBrush
 
 ```cs
 
@@ -93,7 +93,7 @@ using GDIHelper;
             Brush solidBrush = _instance.GlowBrush(Color.Brown, new Color[] {Color.Black, Color.DarkRed}, new PointF(5, 8), GP, WrapMode.Clamp);
     
 ```
-* GlowBrush
+### GlowBrush
 
 ```cs
 
@@ -109,97 +109,97 @@ using GDIHelper;
 
 ##
 
-<h2 align="Left">Extensions</h3>
+<h1 align="Left">Extensions</h1>
 
-<h4 align="Left">Rectangles</h3>
+<h2 align="Left">Rectangles</h2>
 
-* RoundRec
+### RoundRec
 
 ```cs
 GraphicsPath GP = new Rectangle(0, 0, 10, 10).RoundRec(12, true, true, true, true);
 ```
 
-<h4 align="Left">Colors</h3>
+<h3 align="Left">Colors</h3>
 
-* ToHTML
+### ToHTML
 ```cs
 string htmlColor = Color.Brown.ToHTML();
 ```
-* ToBrush
+### ToBrush
 ```cs
 SolidBrush solidBrush = Color.MediumBlue.ToBrush();
 ```
-* ToPen
+### ToPen
 ```cs
 Pen pen = Color.Brown.ToPen();
 ```
-* ToRGBString
+### ToRGBString
 ```cs
 string rgb = Color.Aquamarine.ToRGBString();
 ```
 Output :
  > rgb(127, 255, 212)
  
- * ToRGBAString
+### ToRGBAString
 ```cs
 string rgba = Color.Aquamarine.ToRGBAString();
 ```
 Output :
  > rgba(127, 255, 212, 255)
   
- * ToARGBString
+###* ToARGBString
 ```cs
 string argb = Color.Aquamarine.ToARGBString();
 ```
 Output :
  > argb(255, 127, 255, 212)
  
-  * MixColors
+### MixColors
 ```cs
 Color color = new Color[]{Color.Black, Color.Blue}.MixColors();
 ```
 
-<h4 align="Left">Colors</h3>
+<h3 align="Left">Colors</h3>
 
-  * DrawImageFromBase64
+### DrawImageFromBase64
 ```cs
 Graphics g = CreateGraphics();
 /// DrawImageFromBase64(string base64Image, Rectangle rect)
 g.DrawImageFromBase64("base64 image", new Rectangle(0, 0, 12, 12));
 ```
-* DrawColoredImage
+### DrawColoredImage
 ```cs
 Graphics g = CreateGraphics();
 /// DrawColoredImage(Rectangle r, string base64Image, Color c)
 g.DrawColoredImage(new Rectangle(0, 0, 12, 12), "base64 image", Color.Black);
 ```
-* DrawColoredImage
+### DrawColoredImage
 ```cs
 Graphics g = CreateGraphics();
 Image image = Image.FromFile("image path");
 // DrawColoredImage(Rectangle r, Image image, Color c)
 g.DrawColoredImage(new Rectangle(0, 0, 12, 12), image, Color.Black);
 ```
-* DrawTransparentImage
+### DrawTransparentImage
 ```cs
 Graphics g = CreateGraphics();
 Image image = Image.FromFile("image path");
 // DrawTransparentImage(float alpha, Image image, Rectangle rect)
 g.DrawTransparentImage(0.1f, image, new Rectangle(0, 0, 12, 12));
 ```
-* DrawStrokedRectangle
+### DrawStrokedRectangle
 ```cs
 Graphics g = CreateGraphics();
 // DrawStrokedRectangle(Rectangle rect, Color bodyColor, Color strokeColor, int strokeThickness = 1)
 g.DrawStrokedRectangle(new Rectangle(0, 0, 12, 12), Color.Brown, Color.Black, 2);
 ```
-* DrawStrokedEllipse
+### DrawStrokedEllipse
 ```cs
 Graphics g = CreateGraphics();
 // DrawStrokedEllipse(Rectangle rect, Color bodyColor, Color strokeColor, int strokeThickness = 1)
 g.DrawStrokedEllipse(new Rectangle(0, 0, 12, 12), Color.Brown, Color.Black, 2);
 ```
-* DrawRoundedRectangleWithStroke
+### DrawRoundedRectangleWithStroke
 ```cs
 Graphics g = CreateGraphics();
 // DrawRoundedRectangleWithStroke(Rectangle rect, Color bodyColor, Color strokeColor, int strokeThickness = 1, int curve = 1, bool topLeft = true, bool topRight = true,
@@ -207,55 +207,55 @@ Graphics g = CreateGraphics();
 g.DrawRoundedRectangleWithStroke(new Rectangle(0, 0, 12, 12), Color.Brown, Color.Black, 2, 10, true, true ,true, true);
 ```
 
-<h4 align="Left">Images</h3>
+<h3 align="Left">Images</h3>
 
- * ToBrush
+### ToBrush
 ```cs
 Image image = Image.FromFile("image path");
 TextureBrush pathGradientBrush = image.ToBrush();
 ```
- * ToBrush
+### ToBrush
 ```cs
 Image image = Image.FromFile("image path");
 TextureBrush pathGradientBrush = image.ToBrush(new Rectangle(0, 0, 22, 22));
 ```
- * ToPen
+### ToPen
 ```cs
 Image image = Image.FromFile("image path");
 // ToPen(float width = 1, LineCap startCap = LineCap.Custom, LineCap endCap = LineCap.Custom)
 Pen pen = image.ToPen(2, LineCap.Custom, LineCap.Custom);
 ```
- * ToBase64
+### ToBase64
 ```cs
 Image image = Image.FromFile("image path");
 string base64image = image.ToBase64();
 ```
-<h4 align="Left">Strings</h3>
+<h3 align="Left">Strings</h3>
 
- * ToImage
+### ToImage
 ```cs
 string base64Image = "imageinbase64string";
 Image image = base64Image.ToImage();
 ```
- * ToColor
+### ToColor
 ```cs
 string HTML = "#fff";
 // ToColor(int alpha = 255)
 Color color = HTML.ToColor(80);
 ```
- * ToBrush
+### ToBrush
 ```cs
 string HTML = "#fff";
 // ToBrush(int alpha = 255)
 SolidBrush solidBrush = HTML.ToBrush(90);
 ```
- * ToPen
+### ToPen
 ```cs
 string HTML = "#fff";
 // ToPen(int alpha = 255, float size = 1, LineCap startCap = LineCap.Custom, LineCap endCap = LineCap.Custom)
 Pen pen = HTML.ToPen(220, 4, LineCap.Custom, LineCap.Custom);
 ```
- * ToFont
+### ToFont
 ```cs
 string fontName = "Arial";
 // ToFont(float size, FontStyle fontStyle = FontStyle.Regular, GraphicsUnit unit = GraphicsUnit.Pixel)

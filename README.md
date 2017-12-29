@@ -3,6 +3,11 @@ A Bunch of useful GDI+ methods and extensions that can be used for many purposes
 
 ## 
 
+## Dependency
+ .NET Framework 3.5 or higher
+ 
+ ## 
+ 
 ## Contents
 
 <h4 align="Left">Methods</h3>
